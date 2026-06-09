@@ -1,0 +1,18 @@
+.feed {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background-color: var(--bg-color);
+}
+
+.feed__heading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}

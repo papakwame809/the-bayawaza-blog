@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root, [data-theme="dark"] {
+  --bg-color: #161616;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --border-color: #2a2a2a;
+  --accent-color: #3b82f6;
+  --card-bg: #1e1e1e;
+}
+
+[data-theme="light"] {
+  --bg-color: #fcfbf9;      
+  --text-main: #111111;     
+  --text-muted: #666666;    
+  --border-color: #e5e5e5;
+  --accent-color: #1d4ed8;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .navbar__logo, .hero__title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, small {
+  color: inherit; 
+  transition: color 0.3s ease;
+}
+
+div, section, article, main {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+hr, border, [class*="border"], [class*="line"] {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}

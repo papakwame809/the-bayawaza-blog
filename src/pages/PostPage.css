@@ -1,0 +1,87 @@
+.post-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  color: #e0e0e0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.post-page__back {
+  background: none;
+  border: none;
+  color: #8c8c8c;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  transition: color 0.2s ease;
+}
+
+.post-page__back:hover {
+  color: #ffffff;
+}
+
+.post-page__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: #8c8c8c;
+  margin-bottom: 1.5rem;
+}
+
+.post-page__dot::before {
+  content: "•";
+  color: #404040;
+}
+
+.post-page__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.post-page__excerpt {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+  border-left: 2px solid #282828;
+  padding-left: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.post-page__content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d1d1d1;
+}
+
+.post-page__content p {
+  margin-bottom: 1.75rem;
+}
+
+.post-error {
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.post-error h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-error button {
+  background: #ffffff;
+  color: #161616;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
