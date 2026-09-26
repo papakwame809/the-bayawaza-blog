@@ -28,8 +28,13 @@ header, .navbar, .header-container {
 }
 
 header a, .nav-link {
-  font-size: clamp(0.8rem, 0.75rem + 0.3vw, 0.95rem);
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  header a, .nav-link {
+    font-size: clamp(0.8rem, 0.75rem + 0.3vw, 0.95rem);
+  }
 }
 
 /* FLOATING AUTHOR BUTTON */
