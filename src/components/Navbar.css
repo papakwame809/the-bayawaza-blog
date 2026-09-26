@@ -64,8 +64,6 @@
   font-weight: 500;
 }
 
-
-/* The pill capsule wrapper container */
 .theme-toggle-container {
   background: var(--border-color); 
   border: 1px solid var(--border-color);

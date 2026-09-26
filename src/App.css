@@ -1,3 +1,44 @@
+/* --- Header & Theme Toggle Mobile Fix --- */
+
+/* Ensures the header items align horizontally and don't overflow */
+header, .navbar, .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Group containing your theme button and nav links */
+.nav-right, .header-actions, header div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Prevent the theme button from shrinking to 0px width on phones */
+.theme-toggle, .theme-btn, header button {
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0.4rem;
+}
+
+/* Adjust layout on small mobile screens */
+@media (max-width: 640px) {
+  header, .navbar, .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Reduces text size slightly so everything fits on one row */
+  header a, .nav-link {
+    font-size: 0.875rem;
+  }
+}
+
 .author-floating-btn {
   position: fixed;
   bottom: 24px;
@@ -206,7 +247,6 @@
   color: var(--text-main, #ffffff);
 }
 
-/* Container for the post directory */
 .post-list-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -216,7 +256,6 @@
   padding: 0 1.5rem;
 }
 
-/* Individual Post Card - Turning it into a visual bucket */
 .post-card {
   background: #16181c;
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -233,7 +272,6 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Graphic Header Placeholder for Cards (Since you don't have images attached to every post data object yet) */
 .post-card__visual-header {
   height: 160px;
   background: linear-gradient(135deg, #1e2127 0%, #0d0e12 100%);
@@ -244,7 +282,6 @@
   position: relative;
 }
 
-/* Subtle background pattern matrix */
 .post-card__visual-header::before {
   content: '';
   position: absolute;
@@ -255,7 +292,6 @@
   background-size: 16px 16px;
 }
 
-/* Card Content Wrapping */
 .post-card__body {
   padding: 1.5rem;
   display: flex;
@@ -310,7 +346,6 @@
   }
 }
 
-/* Left side panel of the main hero element */
 .hero-card__graphic-side {
   background: #0d0e12;
   display: flex;
@@ -320,7 +355,6 @@
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Right side content pane */
 .hero-card__content-side {
   padding: 3rem;
   display: flex;
@@ -337,24 +371,3 @@
   margin: 0 0 1rem 0;
 }
 
-.home-welcome {
-  max-width: 860px; /* Matches your Hero component container width perfectly */
-  margin: 5rem auto 0 auto;
-  padding: 0 1.5rem;
-  font-family: 'DM Sans', sans-serif;
-}
-
-.home-welcome__title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--text-main, #ffffff);
-  margin: 0 0 1rem 0;
-}
-
-.home-welcome__line {
-  width: 100%;
-  height: 1px;
-  background: var(--border-color, rgba(255, 255, 255, 0.1));
-}

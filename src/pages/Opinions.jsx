@@ -35,7 +35,7 @@ export default function Opinions({ posts }) {
             <article key={post.id} className="opinions-item">
               <div className="opinions-item__meta">
                 <span className="opinions-item__tag">{post.category}</span>
-                <span className="opinions-item__dot" />
+                <span className="opinions-item__dot">•</span>
                 <span className="opinions-item__date">{post.date || "Just now"}</span>
               </div>
 

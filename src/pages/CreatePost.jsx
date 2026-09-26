@@ -10,7 +10,7 @@ export default function CreatePost({ onPublish }) {
     readTime: '5 min',
     excerpt: '',
     content: '',
-    image: 'https://picsum.photos/id/102/1200/600' // Default high-quality placeholder
+    image: 'https://picsum.photos/id/102/1200/600' //  placeholder
   });
 
   const handleChange = (e) => {
@@ -24,7 +24,7 @@ export default function CreatePost({ onPublish }) {
     
     const newPost = {
       ...formData,
-      id: String(Date.now()), // Unique safe timestamp ID
+      id: String(Date.now()), //timestamp id
       date: new Date().toLocaleDateString('en-GB', {
         day: 'numeric',
         month: 'long',
@@ -38,7 +38,9 @@ export default function CreatePost({ onPublish }) {
 
   return (
     <main className="create-page">
+
       <div className="create-container">
+        
         <button className="create__back-btn" onClick={() => navigate('/')}>
           ← Cancel & Return Home
         </button>
